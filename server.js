@@ -2,6 +2,8 @@ import ip from 'ip';
 import express from 'express';
 import minimist from 'minimist';
 
+import template from './src/template';
+
 const env = process.env.NODE_ENV;
 const argv = minimist(process.argv.slice(2));
 
@@ -12,6 +14,10 @@ const prettyHost = customHost || 'localhost';
 const port = argv.port || process.env.PORT || 3000;
 
 const app = express();
+
+app.get('*', (req, res) => {
+  res.status(200).send(template());
+});
 
 app.listen(port, host, (err) => {
   if (err) {
