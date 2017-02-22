@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/shatyajeet/react-ssr-hmr-csp/issues"
   },
-  "homepage": "https://github.com/shatyajeet/react-ssr-hmr-csp#readme"
+  "homepage": "https://github.com/shatyajeet/react-ssr-hmr-csp#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.23.0"
+  }
 }
