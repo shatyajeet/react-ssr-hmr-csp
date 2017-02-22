@@ -4,7 +4,7 @@
   "description": "React boilerplate code for Server Side Rendering, Code Splitting and Hot Module Replacement",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development node index.js"
   },
   "repository": {
     "type": "git",
