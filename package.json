@@ -1,0 +1,31 @@
+{
+  "name": "react-ssr-hmr-csp",
+  "version": "0.0.1",
+  "description": "React boilerplate code for Server Side Rendering, Code Splitting and Hot Module Replacement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shatyajeet/react-ssr-hmr-csp.git"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "hot",
+    "module",
+    "replacement",
+    "server",
+    "side",
+    "rendering",
+    "code",
+    "splitting"
+  ],
+  "author": "Shatyajeet Parida <shatyajeet@gmail.com> (https://github.com/shatyajeet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shatyajeet/react-ssr-hmr-csp/issues"
+  },
+  "homepage": "https://github.com/shatyajeet/react-ssr-hmr-csp#readme"
+}
