@@ -13,14 +13,9 @@
   "keywords": [
     "react",
     "react-router",
-    "hot",
-    "module",
-    "replacement",
-    "server",
-    "side",
-    "rendering",
-    "code",
-    "splitting"
+    "hot-module-replacement",
+    "server-side-rendering",
+    "code-splitting"
   ],
   "author": "Shatyajeet Parida <shatyajeet@gmail.com> (https://github.com/shatyajeet)",
   "license": "MIT",
