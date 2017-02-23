@@ -7,6 +7,7 @@ export default (env) => `
     </head>
     <body>
       <div id="app"></div>
+      <script src="/assets/bundle.js"></script>
     </body>
   </html>
 `;

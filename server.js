@@ -1,7 +1,9 @@
+import {resolve} from 'path';
 import ip from 'ip';
 import express from 'express';
 import minimist from 'minimist';
 
+import middleware from './middlewares';
 import template from './src/template';
 
 const env = process.env.NODE_ENV;
@@ -14,6 +16,9 @@ const prettyHost = customHost || 'localhost';
 const port = argv.port || process.env.PORT || 3000;
 
 const app = express();
+
+app.use('/assets', express.static(resolve(__dirname, 'dist')));
+app.use(middleware);
 
 app.get('*', (req, res) => {
   res.status(200).send(template());
