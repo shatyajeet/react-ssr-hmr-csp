@@ -34,6 +34,7 @@
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-plugin-transform-es2015-parameters": "^6.23.0",
     "babel-preset-env": "^1.1.8",
     "babel-preset-react": "^6.23.0",
     "babel-register": "^6.23.0",

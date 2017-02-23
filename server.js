@@ -4,7 +4,7 @@ import express from 'express';
 import minimist from 'minimist';
 
 import devMiddleware from './middlewares';
-import template from './index-template';
+import renderMiddleware from './middlewares/render-middleware';
 
 const env = process.env.NODE_ENV;
 const argv = minimist(process.argv.slice(2));
@@ -20,9 +20,7 @@ const app = express();
 app.use('/assets', express.static(resolve(__dirname, 'dist')));
 app.use(devMiddleware);
 
-app.get('*', (req, res) => {
-  res.status(200).send(template());
-});
+app.get('*', renderMiddleware);
 
 app.listen(port, host, (err) => {
   if (err) {

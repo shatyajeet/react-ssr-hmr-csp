@@ -1,4 +1,4 @@
-export default (env) => `
+export default (env, appString) => `
   <!doctype html>
   <html lang="en">
     <head>
@@ -6,7 +6,7 @@ export default (env) => `
       <title>React Super Combo Boilerplate</title>
     </head>
     <body>
-      <div id="app"></div>
+      <div id="app">${appString}</div>
       <script src="/assets/bundle.js"></script>
     </body>
   </html>
