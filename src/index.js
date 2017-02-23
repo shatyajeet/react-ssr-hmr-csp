@@ -1,12 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-const mountPoint = document.getElementById('app');
+import App from './App';
 
-const App = () => {
-  return (
-    <div>Hello, server!</div>
-  );
-};
+const mountPoint = document.getElementById('app');
 
 render(<App />, mountPoint);

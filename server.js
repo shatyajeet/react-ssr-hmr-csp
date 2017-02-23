@@ -3,8 +3,8 @@ import ip from 'ip';
 import express from 'express';
 import minimist from 'minimist';
 
-import middleware from './middlewares';
-import template from './src/template';
+import devMiddleware from './middlewares';
+import template from './index-template';
 
 const env = process.env.NODE_ENV;
 const argv = minimist(process.argv.slice(2));
@@ -18,7 +18,7 @@ const port = argv.port || process.env.PORT || 3000;
 const app = express();
 
 app.use('/assets', express.static(resolve(__dirname, 'dist')));
-app.use(middleware);
+app.use(devMiddleware);
 
 app.get('*', (req, res) => {
   res.status(200).send(template());
